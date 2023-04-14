@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body id="Paragraph">
+
+<style>
+  ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+  
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 20px 22px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+}
+
+.active {
+  background-color: #dbcaff;
+}
+
+</style>
+</head>
+<body>
+
+<div class="header">
+</div>
+
+<ul>
+  <li><a class="active" href="#home">Home</a></li>
+  <li><a href="#news">News</a></li>
+  <li><a href="#contact">Contact</a></li>
+  <li><a href="#about">About</a></li>
+</ul>
+
+      <br>
+    <h1 id="Title" style="margin-left:400px";>Hello World!</h1>
+    <p> This is a test for light mode to dark mode</p>
+<div id="text1"> Light mode <br>
+    Negative contrast polarity (dark mode) denotes the combination of light (e.g., white) text on dark (e.g., black) background.    <br>
+    Dark mode <br>
+    Positive contrast polarity (light mode) refers to dark-font text on light background. </div>
+
+<button id="button button1" style="margin-left :500px" onclick="changeText()"> Dark mode </button>
+<button id="button button2" onclick="changeLight()"> light mode </button>
+<br>
+
+
+
+<script> 
+let Titleone = document.getElementById("Title")
+let headingTwo = document.getElementById("Paragraph");
+
+headingTwo.style.fontSize="40px";
+headingTwo.style.color="#121212";
+headingTwo.style.margin="100px";
+
+
+function changeText() {
+
+    headingTwo.style.fontSize="40px";
+    headingTwo.style.width="9000"
+    headingTwo.style.height="9000"
+
+headingTwo.style.color="white";
+headingTwo.style.backgroundColor="#1c1c1c";
+headingTwo.style.margin="100px";
+
+}
+
+
+
+
+function changeLight() {
+
+    headingTwo.style.fontSize="40px";
+    headingTwo.style.color="#121212";
+    headingTwo.style.backgroundColor="white"
+    headingTwo.style.margin="100px";
+
+}
+
+
+
+
+
+</script>
+</body>
+</html>
